@@ -3,24 +3,29 @@ entries:
   flux2:
   - apiVersion: v2
     appVersion: 0.24.1
-    created: "2021-12-13T16:49:55.910989954Z"
+    created: "2021-12-20T11:19:55.945850201Z"
     description: A Helm chart for flux2
-    digest: c6af2cb7bcd8bcb46eed45f8d12a415960cc275875eaa619df3b737f54f4fb4f
+    digest: 2fb04b34eead17ab71c67e75942527f520fa0de918b683a7be892e91c7c9967e
     name: flux2
     type: application
     urls:
-    - https://github.com/dwerder/helm-charts/releases/download/flux2-0.8.0/flux2-0.8.0.tgz
-    version: 0.8.0
-  flux2-sync:
+    - https://github.com/dwerder/helm-charts/releases/download/flux2-0.8.1/flux2-0.8.1.tgz
+    version: 0.8.1
+  flux2-multi-tenancy:
   - apiVersion: v2
-    created: "2021-12-13T16:49:56.113637913Z"
-    description: A Helm chart for flux2 GitRepository to sync with
-    digest: 91e4f0cdd7414c9f8ba238a7eb28cbd7cab345a15c828c07080d223c9d23ba04
-    name: flux2-sync
+    created: "2021-12-20T11:19:56.131389721Z"
+    dependencies:
+    - condition: kyverno.enabled
+      name: kyverno
+      repository: https://kyverno.github.io/kyverno
+      version: 2.1.4
+    description: A Helm chart for flux2-multi-tenancy
+    digest: 1e6fd8f5f7452b1bb5d5a2a01cb17b85c2f488ef45b6e7aa5a9d4ac038674022
+    name: flux2-multi-tenancy
     sources:
-    - https://github.com/fluxcd-community/helm-charts
+    - https://github.com/fluxcd/flux2-multi-tenancy
     type: application
     urls:
-    - https://github.com/dwerder/helm-charts/releases/download/flux2-sync-0.3.3/flux2-sync-0.3.3.tgz
-    version: 0.3.3
-generated: "2021-12-13T16:49:56.113643713Z"
+    - https://github.com/dwerder/helm-charts/releases/download/flux2-multi-tenancy-0.0.1/flux2-multi-tenancy-0.0.1.tgz
+    version: 0.0.1
+generated: "2021-12-20T11:19:56.131394221Z"
