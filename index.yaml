@@ -3,41 +3,43 @@ entries:
   flux2:
   - apiVersion: v2
     appVersion: 0.24.1
-    created: "2021-12-20T11:47:03.176105037Z"
+    created: "2021-12-20T19:50:33.405700615Z"
     description: A Helm chart for flux2
-    digest: a0e8054cbfde47490305128208aef40e35e9a6905ef4fc56c712a16bd649777e
+    digest: 3b0c229629ab1c26544dad97e1b580725753597068e14f79c6ef6f68990eeea1
     name: flux2
+    sources:
+    - https://github.com/fluxcd-community/helm-charts
     type: application
     urls:
-    - https://github.com/dwerder/helm-charts/releases/download/flux2-0.8.2/flux2-0.8.2.tgz
-    version: 0.8.2
+    - https://github.com/dwerder/helm-charts/releases/download/flux2-0.8.3/flux2-0.8.3.tgz
+    version: 0.8.3
   flux2-multi-tenancy:
   - apiVersion: v2
-    created: "2021-12-20T11:47:03.392476582Z"
+    created: "2021-12-20T19:50:33.544920574Z"
     dependencies:
     - condition: kyverno.enabled
       name: kyverno
       repository: https://kyverno.github.io/kyverno
       version: 2.1.4
     description: A Helm chart for flux2-multi-tenancy
-    digest: ff15075956f136e78e9af8d0a2dbf8dd30a6f709125792130c8285c042c719fd
+    digest: 97087059a64fa3fff4cb6f8a4e697c10a825f4ae418945bf3a60a626de205415
     name: flux2-multi-tenancy
     sources:
     - https://github.com/fluxcd/flux2-multi-tenancy
     type: application
     urls:
-    - https://github.com/dwerder/helm-charts/releases/download/flux2-multi-tenancy-0.0.2/flux2-multi-tenancy-0.0.2.tgz
-    version: 0.0.2
+    - https://github.com/dwerder/helm-charts/releases/download/flux2-multi-tenancy-0.0.3/flux2-multi-tenancy-0.0.3.tgz
+    version: 0.0.3
   flux2-sync:
   - apiVersion: v2
-    created: "2021-12-20T11:47:03.668794578Z"
+    created: "2021-12-20T19:50:33.652704341Z"
     description: A Helm chart for flux2 GitRepository to sync with
-    digest: 585abc0557b32160963919c4d8788e240c7d1e5a4ed5548399d7b0c129d1bc26
+    digest: 98b496a2c69bd8d25ed89ca5a31e92a3172526c0d99c0d2c38188537be73885c
     name: flux2-sync
     sources:
     - https://github.com/fluxcd-community/helm-charts
     type: application
     urls:
-    - https://github.com/dwerder/helm-charts/releases/download/flux2-sync-0.3.5/flux2-sync-0.3.5.tgz
-    version: 0.3.5
-generated: "2021-12-20T11:47:03.668799178Z"
+    - https://github.com/dwerder/helm-charts/releases/download/flux2-sync-0.3.6/flux2-sync-0.3.6.tgz
+    version: 0.3.6
+generated: "2021-12-20T19:50:33.652711142Z"
