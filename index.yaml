@@ -3,29 +3,41 @@ entries:
   flux2:
   - apiVersion: v2
     appVersion: 0.24.1
-    created: "2021-12-20T11:19:55.945850201Z"
+    created: "2021-12-20T11:47:03.176105037Z"
     description: A Helm chart for flux2
-    digest: 2fb04b34eead17ab71c67e75942527f520fa0de918b683a7be892e91c7c9967e
+    digest: a0e8054cbfde47490305128208aef40e35e9a6905ef4fc56c712a16bd649777e
     name: flux2
     type: application
     urls:
-    - https://github.com/dwerder/helm-charts/releases/download/flux2-0.8.1/flux2-0.8.1.tgz
-    version: 0.8.1
+    - https://github.com/dwerder/helm-charts/releases/download/flux2-0.8.2/flux2-0.8.2.tgz
+    version: 0.8.2
   flux2-multi-tenancy:
   - apiVersion: v2
-    created: "2021-12-20T11:19:56.131389721Z"
+    created: "2021-12-20T11:47:03.392476582Z"
     dependencies:
     - condition: kyverno.enabled
       name: kyverno
       repository: https://kyverno.github.io/kyverno
       version: 2.1.4
     description: A Helm chart for flux2-multi-tenancy
-    digest: 1e6fd8f5f7452b1bb5d5a2a01cb17b85c2f488ef45b6e7aa5a9d4ac038674022
+    digest: ff15075956f136e78e9af8d0a2dbf8dd30a6f709125792130c8285c042c719fd
     name: flux2-multi-tenancy
     sources:
     - https://github.com/fluxcd/flux2-multi-tenancy
     type: application
     urls:
-    - https://github.com/dwerder/helm-charts/releases/download/flux2-multi-tenancy-0.0.1/flux2-multi-tenancy-0.0.1.tgz
-    version: 0.0.1
-generated: "2021-12-20T11:19:56.131394221Z"
+    - https://github.com/dwerder/helm-charts/releases/download/flux2-multi-tenancy-0.0.2/flux2-multi-tenancy-0.0.2.tgz
+    version: 0.0.2
+  flux2-sync:
+  - apiVersion: v2
+    created: "2021-12-20T11:47:03.668794578Z"
+    description: A Helm chart for flux2 GitRepository to sync with
+    digest: 585abc0557b32160963919c4d8788e240c7d1e5a4ed5548399d7b0c129d1bc26
+    name: flux2-sync
+    sources:
+    - https://github.com/fluxcd-community/helm-charts
+    type: application
+    urls:
+    - https://github.com/dwerder/helm-charts/releases/download/flux2-sync-0.3.5/flux2-sync-0.3.5.tgz
+    version: 0.3.5
+generated: "2021-12-20T11:47:03.668799178Z"
