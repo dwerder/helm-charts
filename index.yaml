@@ -1,16 +1,35 @@
 apiVersion: v1
 entries:
   flux2:
-  - apiVersion: v2
+  - annotations:
+      artifacthub.io/changes: |
+        - "[Added]: Add support for extra K8s manifests"
+    apiVersion: v2
     appVersion: 0.25.3
-    created: "2022-01-28T20:21:39.21327134Z"
+    created: "2022-02-02T11:21:55.693864515Z"
     description: A Helm chart for flux2
-    digest: f59048fdc62ea812c8ee30d45eb0f119a35b7691f2ea1402b7e016ad75a04337
+    digest: 141950ece7378b6ad83de783a4072a681c6e65db3630c5b943c109ef84089bc2
     name: flux2
     sources:
     - https://github.com/fluxcd-community/helm-charts
     type: application
     urls:
-    - https://github.com/dwerder/helm-charts/releases/download/flux2-0.9.2/flux2-0.9.2.tgz
-    version: 0.9.2
-generated: "2022-01-28T20:21:39.21328154Z"
+    - https://github.com/dwerder/helm-charts/releases/download/flux2-0.10.0/flux2-0.10.0.tgz
+    version: 0.10.0
+  flux2-notification:
+  - annotations:
+      artifacthub.io/changes: |
+        - "initial release"
+    apiVersion: v2
+    appVersion: 0.25.3
+    created: "2022-02-02T11:21:55.89904932Z"
+    description: A Helm chart for flux2 alerts and the needed providers and secrets
+    digest: d182c70e49a9e03f8f5a76d716e724055d999b1e3bcc9070c699294e2db20712
+    name: flux2-notification
+    sources:
+    - https://github.com/fluxcd-community/helm-charts
+    type: application
+    urls:
+    - https://github.com/dwerder/helm-charts/releases/download/flux2-notification-0.1.0/flux2-notification-0.1.0.tgz
+    version: 0.1.0
+generated: "2022-02-02T11:21:55.899055221Z"
