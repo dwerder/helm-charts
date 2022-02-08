@@ -3,33 +3,54 @@ entries:
   flux2:
   - annotations:
       artifacthub.io/changes: |
-        - "[Added]: Add support for extra K8s manifests"
+        - "[Update]: Update App Version to upstream 0.26.1"
     apiVersion: v2
-    appVersion: 0.25.3
-    created: "2022-02-02T11:21:55.693864515Z"
+    appVersion: 0.26.1
+    created: "2022-02-08T09:18:33.615621884Z"
     description: A Helm chart for flux2
-    digest: 141950ece7378b6ad83de783a4072a681c6e65db3630c5b943c109ef84089bc2
+    digest: d0b069d7e10cb0951e9572a09d927326c284407dcff87a7397e8a2b2a98fa6e6
     name: flux2
     sources:
     - https://github.com/fluxcd-community/helm-charts
     type: application
     urls:
-    - https://github.com/dwerder/helm-charts/releases/download/flux2-0.10.0/flux2-0.10.0.tgz
-    version: 0.10.0
+    - https://github.com/dwerder/helm-charts/releases/download/flux2-0.11.0/flux2-0.11.0.tgz
+    version: 0.11.0
+  flux2-multi-tenancy:
+  - annotations:
+      artifacthub.io/changes: |
+        - "Mark this chart as DEPRECATED. Since upstream appversion 0.26.0 this can be done wilth Multi-Tenancy Lockdown Use `multitenancy.enabled` in flux2 chart >=0.11.0"
+    apiVersion: v2
+    created: "2022-02-08T09:18:33.827064711Z"
+    dependencies:
+    - condition: kyverno.enabled
+      name: kyverno
+      repository: https://kyverno.github.io/kyverno
+      version: 2.1.4
+    deprecated: true
+    description: A Helm chart for flux2-multi-tenancy
+    digest: 0668cf0881265a3265bb4043e8b84f4197065ddb7c6011d869c3d9fc25fc256f
+    name: flux2-multi-tenancy
+    sources:
+    - https://github.com/fluxcd/flux2-multi-tenancy
+    type: application
+    urls:
+    - https://github.com/dwerder/helm-charts/releases/download/flux2-multi-tenancy-0.0.4/flux2-multi-tenancy-0.0.4.tgz
+    version: 0.0.4
   flux2-notification:
   - annotations:
       artifacthub.io/changes: |
-        - "initial release"
+        - "[Update]: Update App Version to upstream 0.26.1"
     apiVersion: v2
-    appVersion: 0.25.3
-    created: "2022-02-02T11:21:55.89904932Z"
+    appVersion: 0.26.1
+    created: "2022-02-08T09:18:34.041006258Z"
     description: A Helm chart for flux2 alerts and the needed providers and secrets
-    digest: d182c70e49a9e03f8f5a76d716e724055d999b1e3bcc9070c699294e2db20712
+    digest: ca38166b79e33422c4c819ee110e4eeb502fcff9c4756ac4db1282f54db21d13
     name: flux2-notification
     sources:
     - https://github.com/fluxcd-community/helm-charts
     type: application
     urls:
-    - https://github.com/dwerder/helm-charts/releases/download/flux2-notification-0.1.0/flux2-notification-0.1.0.tgz
-    version: 0.1.0
-generated: "2022-02-02T11:21:55.899055221Z"
+    - https://github.com/dwerder/helm-charts/releases/download/flux2-notification-0.2.0/flux2-notification-0.2.0.tgz
+    version: 0.2.0
+generated: "2022-02-08T09:18:34.041011558Z"
