@@ -3,54 +3,49 @@ entries:
   flux2:
   - annotations:
       artifacthub.io/changes: |
-        - "[Changed]: Use number port instead of named port in webhook service"
+        - "[Added]: Allow setting podSecurityContext for controllers"
     apiVersion: v2
-    appVersion: 0.29.3
-    created: "2022-05-09T21:18:22.074423644Z"
+    appVersion: 0.37.0
+    created: "2023-01-26T09:29:32.061194078Z"
     description: A Helm chart for flux2
-    digest: cdd092751e1b60b7d881baa1c650c85f2532b7c3b191fd06859934fc961ac353
+    digest: 7cf270e03736fbec60cb113a3e11df2298c3ae2527bef85ccf9766b44c1e4261
     name: flux2
     sources:
     - https://github.com/fluxcd-community/helm-charts
     type: application
     urls:
-    - https://github.com/dwerder/helm-charts/releases/download/flux2-0.18.3/flux2-0.18.3.tgz
-    version: 0.18.3
+    - https://github.com/dwerder/helm-charts/releases/download/flux2-2.5.0/flux2-2.5.0.tgz
+    version: 2.5.0
   flux2-notification:
   - annotations:
       artifacthub.io/changes: |
-        - "[Update]: Update App Version to upstream 0.29.3"
+        - "[Chore]: Update App Version to upstream 0.37.0"
     apiVersion: v2
-    appVersion: 0.29.3
-    created: "2022-05-09T21:18:22.238335662Z"
+    appVersion: 0.37.0
+    created: "2023-01-26T09:29:32.266083762Z"
     description: A Helm chart for flux2 alerts and the needed providers and secrets
-    digest: 9868719442bc9d0b2ed0f4c0369da84a9ec7f72b3a2b5957d1e2016aa863df9c
+    digest: 7358b3761f2619fd83a54f122e47cd769189239db20ca72e4a5361d5aa5be569
     name: flux2-notification
     sources:
     - https://github.com/fluxcd-community/helm-charts
     type: application
     urls:
-    - https://github.com/dwerder/helm-charts/releases/download/flux2-notification-0.5.2/flux2-notification-0.5.2.tgz
-    version: 0.5.2
+    - https://github.com/dwerder/helm-charts/releases/download/flux2-notification-1.6.0/flux2-notification-1.6.0.tgz
+    version: 1.6.0
   flux2-sync:
   - annotations:
       artifacthub.io/changes: |
-        - kind: changed
-          description: update apiVersion of GitRepository resource to v1beta2
-          links:
-            - name: GitHub Issue
-              url: https://github.com/fluxcd-community/helm-charts/issues/89
-            - name: GitHub PR
-              url: https://github.com/fluxcd-community/helm-charts/pull/90
+        - "[Chore]: Update App Version to upstream 0.37.0"
     apiVersion: v2
-    created: "2022-05-09T21:18:22.39867034Z"
+    appVersion: 0.37.0
+    created: "2023-01-26T09:29:32.455851804Z"
     description: A Helm chart for flux2 GitRepository to sync with
-    digest: ddb9505e0d04f70a7350ed97865f62e8866da009a27eb47b665c34f83a7bf6be
+    digest: 2dd494ac6c7cf603e72eb46f2539987724005c4429a0945d800e72820a312cd1
     name: flux2-sync
     sources:
     - https://github.com/fluxcd-community/helm-charts
     type: application
     urls:
-    - https://github.com/dwerder/helm-charts/releases/download/flux2-sync-0.3.7/flux2-sync-0.3.7.tgz
-    version: 0.3.7
-generated: "2022-05-09T21:18:22.39867554Z"
+    - https://github.com/dwerder/helm-charts/releases/download/flux2-sync-1.2.0/flux2-sync-1.2.0.tgz
+    version: 1.2.0
+generated: "2023-01-26T09:29:32.455859704Z"
